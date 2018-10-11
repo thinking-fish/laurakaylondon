@@ -26,6 +26,11 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="V8c-c7-142">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -33,10 +38,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Vn-EC-PgV" secondAttribute="bottom" id="GU8-da-az0"/>
                             <constraint firstItem="9Vn-EC-PgV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QbO-Qk-qJK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Vn-EC-PgV" secondAttribute="trailing" id="YaB-ea-ZJD"/>
+                            <constraint firstItem="V8c-c7-142" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mQJ-4Y-fiA"/>
+                            <constraint firstItem="V8c-c7-142" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s3E-yJ-kxG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="V8c-c7-142" id="AeB-SK-UF9"/>
                         <outlet property="webView" destination="9Vn-EC-PgV" id="x3f-tn-e8l"/>
                     </connections>
                 </viewController>
