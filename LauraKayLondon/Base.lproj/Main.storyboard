@@ -4,8 +4,9 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,6 +27,23 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jm5-re-DOY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="bML-op-Htm">
+                                        <rect key="frame" x="47.5" y="193.5" width="281" height="281"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bML-op-Htm" secondAttribute="height" multiplier="1:1" id="cMr-fz-tZw"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.72881543640000002" blue="0.66698956490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bML-op-Htm" firstAttribute="centerY" secondItem="jm5-re-DOY" secondAttribute="centerY" id="1uP-lJ-ILu"/>
+                                    <constraint firstItem="bML-op-Htm" firstAttribute="centerX" secondItem="jm5-re-DOY" secondAttribute="centerX" id="G4h-jx-C7U"/>
+                                    <constraint firstItem="bML-op-Htm" firstAttribute="width" secondItem="jm5-re-DOY" secondAttribute="width" multiplier="3:4" id="NQd-sT-io3"/>
+                                </constraints>
+                            </view>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="V8c-c7-142">
                                 <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,17 +52,22 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jm5-re-DOY" secondAttribute="trailing" id="9nv-w7-4VI"/>
                             <constraint firstItem="9Vn-EC-PgV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AKg-Yi-Ijg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Vn-EC-PgV" secondAttribute="bottom" id="GU8-da-az0"/>
+                            <constraint firstItem="jm5-re-DOY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Jfu-In-6pl"/>
                             <constraint firstItem="9Vn-EC-PgV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QbO-Qk-qJK"/>
+                            <constraint firstAttribute="bottom" secondItem="jm5-re-DOY" secondAttribute="bottom" id="SDS-9T-obO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Vn-EC-PgV" secondAttribute="trailing" id="YaB-ea-ZJD"/>
                             <constraint firstItem="V8c-c7-142" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mQJ-4Y-fiA"/>
                             <constraint firstItem="V8c-c7-142" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s3E-yJ-kxG"/>
+                            <constraint firstItem="jm5-re-DOY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zd2-dN-Xey"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="V8c-c7-142" id="AeB-SK-UF9"/>
+                        <outlet property="overlay" destination="jm5-re-DOY" id="Ddf-oN-kdg"/>
                         <outlet property="webView" destination="9Vn-EC-PgV" id="x3f-tn-e8l"/>
                     </connections>
                 </viewController>
@@ -52,4 +75,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="splash" width="512" height="512"/>
+    </resources>
 </document>

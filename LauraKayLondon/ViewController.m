@@ -32,6 +32,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
 
 #pragma mark -
 -(void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation
@@ -43,5 +48,6 @@
 -(void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation
 {
     [self.activityIndicator setHidden:YES];
+    [self.overlay setHidden:YES];
 }
 @end

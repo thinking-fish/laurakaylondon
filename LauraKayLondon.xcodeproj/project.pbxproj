@@ -298,6 +298,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 23KVDDE8NA;
 				INFOPLIST_FILE = LauraKayLondon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,14 +319,15 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 23KVDDE8NA;
 				INFOPLIST_FILE = LauraKayLondon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.laurakaylondon.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2eb3b784-47f3-4b4b-84cb-1921208cc013";
-				PROVISIONING_PROFILE_SPECIFIER = LKL_Adhoc;
+				PROVISIONING_PROFILE = "619c58aa-4adc-47dc-afb9-8e7d0536a6fb";
+				PROVISIONING_PROFILE_SPECIFIER = LKL_Appstore;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
