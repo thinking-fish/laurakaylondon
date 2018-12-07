@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A27F8EF721BA2548008E62D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A27F8EF621BA2548008E62D5 /* GoogleService-Info.plist */; };
 		A2B21694216ECFF0002C205B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B21693216ECFF0002C205B /* AppDelegate.m */; };
 		A2B21697216ECFF0002C205B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B21696216ECFF0002C205B /* ViewController.m */; };
 		A2B2169A216ECFF0002C205B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B21698216ECFF0002C205B /* Main.storyboard */; };
@@ -14,9 +15,13 @@
 		A2B2169F216ECFF3002C205B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2B2169D216ECFF3002C205B /* LaunchScreen.storyboard */; };
 		A2B216A2216ECFF3002C205B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B216A1216ECFF3002C205B /* main.m */; };
 		A2B216AA216EE6C8002C205B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B216A9216EE6C8002C205B /* WebKit.framework */; };
+		CCCC9620701EA293788DB6D2 /* Pods_LauraKayLondon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E69FEC3DFA94E1457E3A889 /* Pods_LauraKayLondon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E69FEC3DFA94E1457E3A889 /* Pods_LauraKayLondon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LauraKayLondon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50BF92820A3D5B0B0BC40977 /* Pods-LauraKayLondon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LauraKayLondon.release.xcconfig"; path = "Pods/Target Support Files/Pods-LauraKayLondon/Pods-LauraKayLondon.release.xcconfig"; sourceTree = "<group>"; };
+		A27F8EF621BA2548008E62D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2B2168F216ECFF0002C205B /* LauraKayLondon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LauraKayLondon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B21692216ECFF0002C205B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2B21693216ECFF0002C205B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		A2B216A0216ECFF3002C205B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2B216A1216ECFF3002C205B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2B216A9216EE6C8002C205B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		EBE5B39788A32A9169F9BDDD /* Pods-LauraKayLondon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LauraKayLondon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LauraKayLondon/Pods-LauraKayLondon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,18 +42,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2B216AA216EE6C8002C205B /* WebKit.framework in Frameworks */,
+				CCCC9620701EA293788DB6D2 /* Pods_LauraKayLondon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4722B127D9656FAF840ECE0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBE5B39788A32A9169F9BDDD /* Pods-LauraKayLondon.debug.xcconfig */,
+				50BF92820A3D5B0B0BC40977 /* Pods-LauraKayLondon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A2B21686216ECFF0002C205B = {
 			isa = PBXGroup;
 			children = (
 				A2B21691216ECFF0002C205B /* LauraKayLondon */,
 				A2B21690216ECFF0002C205B /* Products */,
 				A2B216A8216EE6C7002C205B /* Frameworks */,
+				4722B127D9656FAF840ECE0A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +83,7 @@
 				A2B21693216ECFF0002C205B /* AppDelegate.m */,
 				A2B21695216ECFF0002C205B /* ViewController.h */,
 				A2B21696216ECFF0002C205B /* ViewController.m */,
+				A27F8EF621BA2548008E62D5 /* GoogleService-Info.plist */,
 				A2B21698216ECFF0002C205B /* Main.storyboard */,
 				A2B2169B216ECFF3002C205B /* Assets.xcassets */,
 				A2B2169D216ECFF3002C205B /* LaunchScreen.storyboard */,
@@ -79,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				A2B216A9216EE6C8002C205B /* WebKit.framework */,
+				0E69FEC3DFA94E1457E3A889 /* Pods_LauraKayLondon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -90,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2B216A5216ECFF3002C205B /* Build configuration list for PBXNativeTarget "LauraKayLondon" */;
 			buildPhases = (
+				FB967425F03C8CB48AD258BB /* [CP] Check Pods Manifest.lock */,
 				A2B2168B216ECFF0002C205B /* Sources */,
 				A2B2168C216ECFF0002C205B /* Frameworks */,
 				A2B2168D216ECFF0002C205B /* Resources */,
+				D9781E446CA10FBDA82E5BDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,12 +162,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2B2169F216ECFF3002C205B /* LaunchScreen.storyboard in Resources */,
+				A27F8EF721BA2548008E62D5 /* GoogleService-Info.plist in Resources */,
 				A2B2169C216ECFF3002C205B /* Assets.xcassets in Resources */,
 				A2B2169A216ECFF0002C205B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D9781E446CA10FBDA82E5BDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LauraKayLondon/Pods-LauraKayLondon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LauraKayLondon/Pods-LauraKayLondon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB967425F03C8CB48AD258BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LauraKayLondon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A2B2168B216ECFF0002C205B /* Sources */ = {
@@ -293,6 +358,7 @@
 		};
 		A2B216A6216ECFF3002C205B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE5B39788A32A9169F9BDDD /* Pods-LauraKayLondon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -313,6 +379,7 @@
 		};
 		A2B216A7216ECFF3002C205B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50BF92820A3D5B0B0BC40977 /* Pods-LauraKayLondon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";

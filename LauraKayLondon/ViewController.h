@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
+@import Firebase;
 
 @interface ViewController : UIViewController <WKNavigationDelegate>
 

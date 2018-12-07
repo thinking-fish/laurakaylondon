@@ -24,6 +24,21 @@
     
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.laurakaylondon.com/"]];
     [self.webView loadRequest:request];
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    BOOL isRegistered = [userDefaults boolForKey:@"registered"];
+    if (isRegistered == NO) {
+        FIRDatabaseReference *ref = [[[FIRDatabase database] reference] child:@"count"];
+        [ref observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+            int count = 0;
+            if (snapshot.value) {
+                count = [snapshot.value intValue];
+            }
+            count += 1;
+            [ref setValue:[NSNumber numberWithInt:count]];
+            [userDefaults setBool:YES forKey:@"registered"];
+        }];
+    }
 }
 
 
