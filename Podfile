@@ -8,5 +8,5 @@ target 'LauraKayLondon' do
   # Pods for LauraKayLondon
   pod 'Firebase/Core'
   pod 'Firebase/Database'
-  
+  pod 'Firebase/Messaging'
 end

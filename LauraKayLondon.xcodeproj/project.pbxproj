@@ -21,6 +21,7 @@
 /* Begin PBXFileReference section */
 		0E69FEC3DFA94E1457E3A889 /* Pods_LauraKayLondon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LauraKayLondon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BF92820A3D5B0B0BC40977 /* Pods-LauraKayLondon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LauraKayLondon.release.xcconfig"; path = "Pods/Target Support Files/Pods-LauraKayLondon/Pods-LauraKayLondon.release.xcconfig"; sourceTree = "<group>"; };
+		A224EF7C21C97D2200AE6AE0 /* LauraKayLondon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LauraKayLondon.entitlements; sourceTree = "<group>"; };
 		A27F8EF621BA2548008E62D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A2B2168F216ECFF0002C205B /* LauraKayLondon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LauraKayLondon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2B21692216ECFF0002C205B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		A2B21691216ECFF0002C205B /* LauraKayLondon */ = {
 			isa = PBXGroup;
 			children = (
+				A224EF7C21C97D2200AE6AE0 /* LauraKayLondon.entitlements */,
 				A2B21692216ECFF0002C205B /* AppDelegate.h */,
 				A2B21693216ECFF0002C205B /* AppDelegate.m */,
 				A2B21695216ECFF0002C205B /* ViewController.h */,
@@ -135,6 +137,11 @@
 				TargetAttributes = {
 					A2B2168E216ECFF0002C205B = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -179,12 +186,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LauraKayLondon/Pods-LauraKayLondon-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -361,6 +370,7 @@
 			baseConfigurationReference = EBE5B39788A32A9169F9BDDD /* Pods-LauraKayLondon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LauraKayLondon/LauraKayLondon.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 23KVDDE8NA;
 				INFOPLIST_FILE = LauraKayLondon/Info.plist;
@@ -371,7 +381,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.laurakaylondon.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3572a64a-dd56-45a2-a4a1-58c3583b6a60";
+				PROVISIONING_PROFILE = "7ce1de21-7018-400b-9e53-44f5863ba9bf";
 				PROVISIONING_PROFILE_SPECIFIER = LKL_Dev;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,6 +392,7 @@
 			baseConfigurationReference = 50BF92820A3D5B0B0BC40977 /* Pods-LauraKayLondon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LauraKayLondon/LauraKayLondon.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 23KVDDE8NA;
@@ -393,7 +404,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.laurakaylondon.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "619c58aa-4adc-47dc-afb9-8e7d0536a6fb";
+				PROVISIONING_PROFILE = "95f7b7cc-9789-49f6-b7a4-dfe248058bfe";
 				PROVISIONING_PROFILE_SPECIFIER = LKL_Appstore;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
